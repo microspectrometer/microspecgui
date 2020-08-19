@@ -1,11 +1,11 @@
 # Next steps
 
+- [ ] publish to PyPI
 - [ ] fix this for the (usual) flipped die orientation
 - [ ] clean up the code
 - [ ] add the missing basic functionality
 - [ ] turn this into a Python project with a `setup.py` file for
   `pip install microspecgui`
-- [ ] publish to PyPI
 
 # Until this is on PyPI
 

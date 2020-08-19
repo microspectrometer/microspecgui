@@ -2,13 +2,6 @@
 # -*- coding: utf-8 -*-
 '''Chromation dev-kit interactive application.
 
-Requirements
-------------
-pip install pyserial
-pip install microspec
-pip install pygame
-pip install pygstuff
-
 keyboard
 --------
 q   - quit
@@ -48,6 +41,8 @@ from pathlib import Path
 
 # Open communication. Communication closes when this app quits.
 kit = MicroSpecSimpleInterface(
+    serial_number='125129',
+    # serial_number='091103',
     timeout=2.0 # seconds until timeout if there is no response
     )
 
@@ -115,7 +110,7 @@ kit.setExposure( to_cycles(milliseconds) )
 # make resource path agnostic to path kit-gui is launched from
 path = Path(__file__)
 here = path.parent
-chromation_logo = str(Path(here).joinpath('icon.png'))
+chromation_logo = str(Path(here).joinpath('_gui/icon.png'))
 
 win = pygs.Window(
     caption=f'Chromation Kit: {kit.serial.serial_number.strip("CHROMATION")}',
@@ -133,7 +128,7 @@ rgb = pygs.RGB()
 # ---------------------------------
 # | Fonts for labels              |
 # ---------------------------------
-consola = str(Path(here).joinpath('consola.ttf'))
+consola = str(Path(here).joinpath('_gui/consola.ttf'))
 
 class Text(object):
     '''Text on screen.'''
