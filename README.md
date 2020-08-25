@@ -1,6 +1,13 @@
+# Install and Use
+
+See local guide to [installation and
+troubleshooting](doc/PyPI.md), (or [read the same guide on the
+PyPI page](https://pypi.org/project/microspecgui/)).
+
 # Next steps
 
-- [ ] publish to PyPI
+- [x] publish to PyPI
+- [ ] add documentation on *Read the Docs*
 - [ ] get map from file
     - [ ] detect die orientation from map
 - [ ] clean up the code

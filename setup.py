@@ -25,7 +25,7 @@ with open("doc/PyPI.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name="microspecgui", # do not use dashes or underscores in names!
-    version="0.0.1a5", # must increment this to re-upload
+    version="0.0.1a6", # must increment this to re-upload
     author="Chromation",
     author_email="mike@chromationspec.com",
     description="Chromation spectrometer dev-kit GUI",
@@ -41,7 +41,8 @@ setuptools.setup(
             "microspec-gui=microspecgui.__main__:main",
             ],
         },
-    include_package_data=True, # include data files in `_gui/`
+    # Include `sdist` data files in the `bdist`.
+    include_package_data=True,
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
