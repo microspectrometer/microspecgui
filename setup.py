@@ -25,13 +25,13 @@ with open("doc/PyPI.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name="microspecgui", # do not use dashes or underscores in names!
-    version="0.0.1a1", # must increment this to re-upload
+    version="0.0.1a3", # must increment this to re-upload
     author="Chromation",
     author_email="mike@chromationspec.com",
     description="Chromation spectrometer dev-kit GUI",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/sustainablelab/microspecgui",
+    url="https://github.com/microspectrometer/microspecgui",
     project_urls={
         'Chromation': 'https://www.chromation.com/',
     },

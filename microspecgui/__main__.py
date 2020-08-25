@@ -84,7 +84,7 @@ class Text(object):
         # ---------------------------------
         # | Fonts for labels              |
         # ---------------------------------
-        consola = str(Path(_GUI).joinpath('_gui/consola.ttf'))
+        consola = str(Path(_GUI).joinpath('gui/consola.ttf'))
 
         # create the font
         self.font = pygame.font.Font(consola, size_pt)
@@ -371,7 +371,7 @@ def main():
     # -------------
 
     # GUI Window icon
-    chromation_logo = str(Path(_GUI).joinpath('_gui/icon.png'))
+    chromation_logo = str(Path(_GUI).joinpath('gui/icon.png'))
 
     # Create the GUI window
     win = pygs.Window(
