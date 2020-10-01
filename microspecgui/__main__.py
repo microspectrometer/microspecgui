@@ -353,7 +353,7 @@ def main():
 
     # Open communication. Communication closes when this app quits.
     kit = MicroSpecSimpleInterface(
-        serial_number='125129',
+        # serial_number='125129',
         # serial_number='091103',
         )
 
