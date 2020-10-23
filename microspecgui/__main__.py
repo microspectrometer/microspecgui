@@ -198,6 +198,8 @@ class Cursor(object):
             size_pt=14,
             color_rgb=self.color
             )
+        self.motions = []
+
     def get_motions_pressed(self, event, key_pressed, key_mods):
         # empty the motion list
         self.motions = []
